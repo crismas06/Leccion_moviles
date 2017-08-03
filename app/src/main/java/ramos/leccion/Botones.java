@@ -7,15 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Random;
 
 public class Botones extends AppCompatActivity {
 
     private static TextView nombres;
+    private static TextView pregunta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_botones);
+
+        Random rand = new Random();
+        final int n = rand.nextInt(5)+1;
 
         Bundle bundle = getIntent().getExtras();
 
@@ -28,6 +35,10 @@ public class Botones extends AppCompatActivity {
         Button btn_finalizar = (Button) findViewById(R.id.btn_finalizar);
 
         nombres = (TextView) findViewById(R.id.txt_user);
+
+        pregunta = (TextView) findViewById(R.id.txt_pregunta);
+
+        pregunta.setText("Cual es el # "+ n);
 
 
         btn_finalizar.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +59,19 @@ public class Botones extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v) {
+
+                if (n == 1){
+
+                    Toast.makeText(getApplicationContext(), "Correcto",Toast.LENGTH_LONG).show();
+
+                }else{
+
+                    Toast.makeText(getApplicationContext(), "Incorrecto",Toast.LENGTH_LONG).show();
+
+                }
+
                 mp.start();
+
             }
         });
 
@@ -57,6 +80,17 @@ public class Botones extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v) {
+
+                if (n == 2){
+
+                    Toast.makeText(getApplicationContext(), "Correcto",Toast.LENGTH_LONG).show();
+
+                }else{
+
+                    Toast.makeText(getApplicationContext(), "Incorrecto",Toast.LENGTH_LONG).show();
+
+                }
+
                 mp2.start();
             }
         });
