@@ -1,6 +1,7 @@
 package ramos.leccion;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +40,51 @@ public class Botones extends AppCompatActivity {
 
                 startActivity(intent);
 
+            }
+        });
+
+        Button one = (Button)this.findViewById(R.id.btn_01);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.mousclik);
+        one.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v) {
+                mp.start();
+            }
+        });
+
+        Button two = (Button)this.findViewById(R.id.btn_02);
+        final MediaPlayer mp2 = MediaPlayer.create(this, R.raw.mousclik);
+        one.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v) {
+                mp2.start();
+            }
+        });
+
+        Button three = (Button)this.findViewById(R.id.btn_03);
+        final MediaPlayer mp3 = MediaPlayer.create(this, R.raw.mousclik);
+        one.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v) {
+                mp3.start();
+            }
+        });
+
+        Button four = (Button)this.findViewById(R.id.btn_04);
+        final MediaPlayer mp4 = MediaPlayer.create(this, R.raw.mousclik);
+        one.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v) {
+                mp4.start();
+            }
+        });
+
+        Button five = (Button)this.findViewById(R.id.btn_05);
+        final MediaPlayer mp5 = MediaPlayer.create(this, R.raw.mousclik);
+        one.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v) {
+                mp5.start();
             }
         });
 
