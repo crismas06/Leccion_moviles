@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Juego de Numeros</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="nombre">Nombre:</string>
+    <string name="ingrese_nombre">Ingrese nombre</string>
+    <string name="btn_enviar">Enviar</string>
+    <string name="hola">Hola</string>
+    <string name="desconocido">Desconocido</string>
+    <string name="numero_01">1</string>
+    <string name="numero_02">2</string>
+    <string name="numero_03">3</string>
+    <string name="numero_04">4</string>
+    <string name="numero_05">5</string>
+    <string name="pregunta">Pregunta Aqui</string>
+    <string name="terminar">Terminar</string>
+    <string name="aciertos"># Aciertos</string>
+    <string name="ninguno">Ninguno</string>
+
+</resources>

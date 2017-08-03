@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Number Game</string>
+    <string name="welcome">Welcome</string>
+    <string name="nombre">Name:</string>
+    <string name="ingrese_nombre">Insert name</string>
+    <string name="btn_enviar">Send</string>
+    <string name="hola">Hi,</string>
+    <string name="desconocido">Unknown</string>
+    <string name="numero_01">1</string>
+    <string name="numero_02">2</string>
+    <string name="numero_03">3</string>
+    <string name="numero_04">4</string>
+    <string name="numero_05">5</string>
+    <string name="pregunta">Question here ...</string>
+    <string name="terminar">Finish</string>
+    <string name="aciertos"># Hits:</string>
+    <string name="ninguno">Nothing</string>
+</resources>
